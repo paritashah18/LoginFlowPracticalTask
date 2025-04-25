@@ -41,7 +41,7 @@ const Auth = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        {isUserLogin ? (
+        {!isUserLogin ? (
           <Stack.Screen name="Home" component={Home} />
         ) : (
           <>
